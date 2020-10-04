@@ -21,4 +21,7 @@ public class Points {
         return new Point(point.x * number, point.y * number, point.z * number);
     }
 
+    public static double lenght(Point point) {
+        return point.lenght();
+    }
 }

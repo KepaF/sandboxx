@@ -22,6 +22,10 @@ public class Point {
         return z;
     }
 
+    public double lenght(){
+        return Math.sqrt(Math.pow(x,2)+Math.pow(y,2)+Math.pow(z,2));
+    }
+
     public static void main(String[] args){
         Point firstPoint=new Point(1,1,1);
         Point secondPoint=new Point(2,0,9);
