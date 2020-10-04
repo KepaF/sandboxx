@@ -23,4 +23,16 @@ public class Person {
     public void setPassportId(int passportId){
         this.passportId=passportId;
     }
+    public static void main(String[] args){
+        Person firstPerson = new Person();
+        Person secondPerson = new Person();
+        firstPerson.firstName="Knopa";
+        firstPerson.lastName="Cat";
+        firstPerson.passportId= 666111;
+
+       secondPerson.firstName="Klepa";
+        secondPerson.lastName="Cat";
+        secondPerson.passportId= 555666;
+
+    }
 }
