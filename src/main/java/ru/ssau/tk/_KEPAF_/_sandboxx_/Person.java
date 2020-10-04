@@ -52,5 +52,10 @@ public class Person {
         secondPerson.lastName="Cat";
         secondPerson.passportId= 555666;
 
+        Person thirdPerson = new Person();
+        Person fourthPerson = new Person("Kopa", "Kat");
+        Person catPerson = new Person("Pepa", "Cat", 668889);
+        Person sixthPerson = new Person(999666);
+
     }
 }
