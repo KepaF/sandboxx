@@ -1,0 +1,19 @@
+package ru.ssau.tk._KEPAF_._sandboxx_;
+
+public class Point {
+    public final double x;
+    public final double y;
+    public final double z;
+    public Point(double x, double y, double z){
+        this.x=x;
+        this.y=y;
+        this.z=z;
+    }
+
+    public static void main(String[] args){
+        Point firstPoint=new Point(1,1,1);
+        Point secondPoint=new Point(2,0,9);
+        Point thirdPoint=new Point(4,7,0);
+
+    }
+}
