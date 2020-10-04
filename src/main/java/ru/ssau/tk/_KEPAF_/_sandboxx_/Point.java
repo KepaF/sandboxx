@@ -10,17 +10,6 @@ public class Point {
         this.z=z;
     }
 
-    public double getX() {
-        return x;
-    }
-
-    public double getY() {
-        return y;
-    }
-
-    public double getZ() {
-        return z;
-    }
 
     public double lenght(){
         return Math.sqrt(Math.pow(x,2)+Math.pow(y,2)+Math.pow(z,2));
