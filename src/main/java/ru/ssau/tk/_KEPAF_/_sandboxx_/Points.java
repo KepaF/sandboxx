@@ -30,5 +30,13 @@ public class Points {
     public static Point inverse(Point point){
         return new Point(1/point.x, 1/point.y, 1/point.z); //получается -0.0, убрать "-", если придётся выводить
     }
+   public static double scalarProduct(Point point1,Point point2){
+           return point1.x * point2.x + point1.y * point2.y + point1.z * point2.z;
+    }
+    public static Point vectorProduct(Point point1,Point point2){
+        double newX = point1.y * point2.z - point1.z * point2.y;
+        double newY = point1.z * point2.x - point1.x * point2.z;
+        double newZ = point1.x * point2.y - point1.y * point2.x;
+        return new Point(newX, newY, newZ);}
 
 }
