@@ -21,8 +21,8 @@ public class Points {
         return new Point(point.x * number, point.y * number, point.z * number);
     }
 
-    public static double lenght(Point point) {
-        return point.lenght();
+    public static double length(Point point) {
+        return point.length();
     }
      public static Point opposite(Point point){
         return new Point(-point.x, -point.y, -point.z); //получается -0.0, убрать "-", если придётся выводить
