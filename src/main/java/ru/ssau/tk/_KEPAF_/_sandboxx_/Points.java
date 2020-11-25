@@ -34,11 +34,11 @@ public class Points {
     }
 
     public static Point opposite(Point point) {
-        return new Point(-point.x, -point.y, -point.z); //получается -0.0, убрать "-", если придётся выводить
+        return new Point(-point.x, -point.y, -point.z);
     }
 
     public static Point inverse(Point point) {
-        return new Point(1 / point.x, 1 / point.y, 1 / point.z); //получается -0.0, убрать "-", если придётся выводить
+        return new Point(1 / point.x, 1 / point.y, 1 / point.z);
     }
 
     public static double scalarProduct(Point point1, Point point2) {
