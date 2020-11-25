@@ -1,4 +1,4 @@
-package ru.ssau.tk._KEPAF_._sandboxx_;
+package ru.ssau.tk._KEPAF_._sandboxx_.Operations;
 
 public abstract class Operation {
     public abstract double apply(double number);
