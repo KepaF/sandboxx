@@ -9,38 +9,38 @@ public class PointsTest {
 
     @Test
     public void testSum() {
-        assertTrue(equalsApproximately(Points.sum(new Point(5.0, 5.0, 5.0),new Point(4.0, 4.0, 4.0)), new Point(9.0, 9.0, 9.0)));
-        assertTrue(equalsApproximately(Points.sum(new Point(0.0, 0.0, 0.0),new Point(0.0, 0.0, 0.0)), new Point(0.0, 0.0, 0.0)));
-        assertFalse(equalsApproximately(Points.sum(new Point(5.0, 5.0, 5.0),new Point(4.0, 4.0, 4.0)), new Point(10.0, 10.0, 19.0)));
+        assertTrue(equalsApproximately(Points.sum(new Point(5.0, 5.0, 5.0), new Point(4.0, 4.0, 4.0)), new Point(9.0, 9.0, 9.0)));
+        assertTrue(equalsApproximately(Points.sum(new Point(0.0, 0.0, 0.0), new Point(0.0, 0.0, 0.0)), new Point(0.0, 0.0, 0.0)));
+        assertFalse(equalsApproximately(Points.sum(new Point(5.0, 5.0, 5.0), new Point(4.0, 4.0, 4.0)), new Point(10.0, 10.0, 19.0)));
     }
 
     @Test
     public void testSubtract() {
-        assertTrue(equalsApproximately(Points.subtract(new Point(5.0, 5.0, 5.0),new Point(4.0, 4.0, 4.0)), new Point(1.0, 1.0, 1.0)));
-        assertTrue(equalsApproximately(Points.subtract(new Point(0.0, 0.0, 0.0),new Point(0.0, 0.0, 0.0)), new Point(0.0, 0.0, 0.0)));
-        assertFalse(equalsApproximately(Points.subtract(new Point(5.0, 5.0, 5.0),new Point(4.0, 4.0, 4.0)), new Point(2.0, 3.0, 4.0)));
+        assertTrue(equalsApproximately(Points.subtract(new Point(5.0, 5.0, 5.0), new Point(4.0, 4.0, 4.0)), new Point(1.0, 1.0, 1.0)));
+        assertTrue(equalsApproximately(Points.subtract(new Point(0.0, 0.0, 0.0), new Point(0.0, 0.0, 0.0)), new Point(0.0, 0.0, 0.0)));
+        assertFalse(equalsApproximately(Points.subtract(new Point(5.0, 5.0, 5.0), new Point(4.0, 4.0, 4.0)), new Point(2.0, 3.0, 4.0)));
     }
 
     @Test
     public void testMultiply() {
-        assertTrue(equalsApproximately(Points.multiply(new Point(5.0, 5.0, 5.0),new Point(4.0, 4.0, 4.0)), new Point(20.0, 20.0, 20.0)));
-        assertTrue(equalsApproximately(Points.multiply(new Point(0.0, 0.0, 0.0),new Point(0.0, 0.0, 0.0)), new Point(0.0, 0.0, 0.0)));
-        assertFalse(equalsApproximately(Points.multiply(new Point(5.0, 5.0, 5.0),new Point(4.0, 4.0, 4.0)), new Point(2.0, 3.0, 4.0)));
+        assertTrue(equalsApproximately(Points.multiply(new Point(5.0, 5.0, 5.0), new Point(4.0, 4.0, 4.0)), new Point(20.0, 20.0, 20.0)));
+        assertTrue(equalsApproximately(Points.multiply(new Point(0.0, 0.0, 0.0), new Point(0.0, 0.0, 0.0)), new Point(0.0, 0.0, 0.0)));
+        assertFalse(equalsApproximately(Points.multiply(new Point(5.0, 5.0, 5.0), new Point(4.0, 4.0, 4.0)), new Point(2.0, 3.0, 4.0)));
     }
 
 
     @Test
     public void testDivide() {
-        assertTrue(equalsApproximately(Points.divide(new Point(50.0, 50.0, 50.0),new Point(4.0, 4.0, 4.0)), new Point(12.5, 12.5, 12.5)));
-        assertTrue(equalsApproximately(Points.divide(new Point(1.0, 1.0, 1.0),new Point(1.0, 1.0, 1.0)), new Point(1.0, 1.0, 1.0)));
-        assertFalse(equalsApproximately(Points.divide(new Point(5.0, 5.0, 5.0),new Point(4.0, 4.0, 4.0)), new Point(2.0, 3.0, 4.0)));
+        assertTrue(equalsApproximately(Points.divide(new Point(50.0, 50.0, 50.0), new Point(4.0, 4.0, 4.0)), new Point(12.5, 12.5, 12.5)));
+        assertTrue(equalsApproximately(Points.divide(new Point(1.0, 1.0, 1.0), new Point(1.0, 1.0, 1.0)), new Point(1.0, 1.0, 1.0)));
+        assertFalse(equalsApproximately(Points.divide(new Point(5.0, 5.0, 5.0), new Point(4.0, 4.0, 4.0)), new Point(2.0, 3.0, 4.0)));
     }
 
     @Test
     public void testEnlarge() {
-        assertTrue(equalsApproximately(Points.enlarge(new Point(5.0, 5.0, 5.0),4), new Point(20.0, 20.0, 20.0)));
-        assertTrue(equalsApproximately(Points.enlarge(new Point(0.0, 0.0, 0.0),4), new Point(0.0, 0.0, 0.0)));
-        assertFalse(equalsApproximately(Points.enlarge(new Point(5.0, 5.0, 5.0),4), new Point(2.0, 3.0, 4.0)));
+        assertTrue(equalsApproximately(Points.enlarge(new Point(5.0, 5.0, 5.0), 4), new Point(20.0, 20.0, 20.0)));
+        assertTrue(equalsApproximately(Points.enlarge(new Point(0.0, 0.0, 0.0), 4), new Point(0.0, 0.0, 0.0)));
+        assertFalse(equalsApproximately(Points.enlarge(new Point(5.0, 5.0, 5.0), 4), new Point(2.0, 3.0, 4.0)));
     }
 
 
@@ -65,9 +65,9 @@ public class PointsTest {
 
     @Test
     public void testScalarProduct() {
-        assertTrue(equalsApproximately(Points.divide(new Point(50.0, 50.0, 50.0),new Point(4.0, 4.0, 4.0)), new Point(12.5, 12.5, 12.5)));
-        assertTrue(equalsApproximately(Points.divide(new Point(1.0, 1.0, 1.0),new Point(1.0, 1.0, 1.0)), new Point(1.0, 1.0, 1.0)));
-        assertFalse(equalsApproximately(Points.divide(new Point(5.0, 5.0, 5.0),new Point(4.0, 4.0, 4.0)), new Point(2.0, 3.0, 4.0)));
+        assertTrue(equalsApproximately(Points.divide(new Point(50.0, 50.0, 50.0), new Point(4.0, 4.0, 4.0)), new Point(12.5, 12.5, 12.5)));
+        assertTrue(equalsApproximately(Points.divide(new Point(1.0, 1.0, 1.0), new Point(1.0, 1.0, 1.0)), new Point(1.0, 1.0, 1.0)));
+        assertFalse(equalsApproximately(Points.divide(new Point(5.0, 5.0, 5.0), new Point(4.0, 4.0, 4.0)), new Point(2.0, 3.0, 4.0)));
     }
 
     @Test

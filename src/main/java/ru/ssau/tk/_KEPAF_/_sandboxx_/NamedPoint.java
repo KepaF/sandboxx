@@ -1,6 +1,6 @@
 package ru.ssau.tk._KEPAF_._sandboxx_;
-
-public class NamedPoint extends Point {
+import ru.ssau.tk._KEPAF_._sandboxx_.Task1_18.Resettable;
+public class NamedPoint extends Point implements Resettable {
     private String name;
 
     public NamedPoint() {
@@ -24,4 +24,8 @@ public class NamedPoint extends Point {
         this.name = name;
     }
 
+    @Override
+    public void reset() {
+        name = "Absent";
+    }
 }
