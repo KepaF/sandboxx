@@ -1,4 +1,4 @@
-package ru.ssau.tk._KEPAF_._sandboxx_.Task2_2;
+package ru.ssau.tk._KEPAF_._sandboxx_.Operations.Arrays;
 
 public class Arrays2_2 {
     public int[] setNumber(int size) {

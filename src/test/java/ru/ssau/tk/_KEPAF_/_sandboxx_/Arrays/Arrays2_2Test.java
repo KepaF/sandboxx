@@ -1,7 +1,7 @@
-package ru.ssau.tk._KEPAF_._sandboxx_.Task2_2;
+package ru.ssau.tk._KEPAF_._sandboxx_.Arrays;
 
 import org.testng.annotations.Test;
-import ru.ssau.tk._KEPAF_._sandboxx_.Task2_1.Arrays2_1;
+import ru.ssau.tk._KEPAF_._sandboxx_.Operations.Arrays.Arrays2_2;
 
 import static org.testng.Assert.*;
 
