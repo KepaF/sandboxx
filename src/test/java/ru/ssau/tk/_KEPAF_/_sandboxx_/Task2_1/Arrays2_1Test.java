@@ -8,9 +8,9 @@ public class Arrays2_1Test {
     @Test
     public void testSetnumber() {
 
-        for (int i = 7; i < 14; i++) {
-            int[] array = Arrays2_1.setnumber(7 + i);
-            assertEquals(array.length, 7 + i);
+        for (int i = 0; i < 7; i++) {
+            int[] array = Arrays2_1.setnumber(i);
+            assertEquals(array.length, i);
             assertNotEquals(array.length, i);
         }
 
