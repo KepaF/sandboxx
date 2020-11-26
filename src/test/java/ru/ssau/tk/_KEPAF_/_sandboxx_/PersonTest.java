@@ -1,6 +1,7 @@
 package ru.ssau.tk._KEPAF_._sandboxx_;
 
 import org.testng.annotations.Test;
+import ru.ssau.tk._KEPAF_._sandboxx_.Gender;
 
 import static org.testng.Assert.*;
 
@@ -8,6 +9,12 @@ public class PersonTest {
     Person person1 = new Person();
     Person person2 = new Person();
     Person person3 = new Person();
+    @Test
+    public void testConstructor() {
+        Person person = new Person("Knopa", "Kat", Gender.Male, 2223);
+
+        assertEquals(person.getGender(), Gender.Male);
+    }
     @Test
     public void test() {
         Person person = new Person();

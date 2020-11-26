@@ -1,9 +1,11 @@
 package ru.ssau.tk._KEPAF_._sandboxx_;
 
 public class Person {
+    public Gender gender;
     private String firstName;
     private String lastName;
     private int passportId;
+
     public Person() {
 
     }
@@ -21,36 +23,57 @@ public class Person {
         this.firstName = firstName;
         this.lastName = lastName;
         this.passportId = passportId;
+
     }
-    public String getFirstName(){
+    public Person(String firstName, String lastName,Gender gender, int passportId) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.passportId = passportId;
+        this.gender = gender;
+    }
+
+    public Gender getGender() {
+        return gender;
+    }
+
+    public String getFirstName() {
         return firstName;
     }
-    public String getLastName(){
+
+    public String getLastName() {
         return lastName;
     }
-    int getPassportId(){
+
+    int getPassportId() {
         return passportId;
     }
 
-    public void setFirstName(String firstName){
-        this.firstName=firstName;
+    public void setGender(Gender gender) {
+        this.gender = gender;
     }
-    public void setLastName(String lastName){
-        this.lastName=lastName;
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
-    public void setPassportId(int passportId){
-        this.passportId=passportId;
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
-    public static void main(String[] args){
+
+    public void setPassportId(int passportId) {
+        this.passportId = passportId;
+    }
+
+    public static void main(String[] args) {
         Person firstPerson = new Person();
         Person secondPerson = new Person();
-        firstPerson.firstName="Knopa";
-        firstPerson.lastName="Cat";
-        firstPerson.passportId= 666111;
+        firstPerson.firstName = "Knopa";
+        firstPerson.lastName = "Cat";
+        firstPerson.passportId = 666111;
 
-       secondPerson.firstName="Klepa";
-        secondPerson.lastName="Cat";
-        secondPerson.passportId= 555666;
+        secondPerson.firstName = "Klepa";
+        secondPerson.lastName = "Cat";
+        secondPerson.passportId = 555666;
 
         Person thirdPerson = new Person();
         Person fourthPerson = new Person("Kopa", "Kat");
